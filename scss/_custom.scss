@@ -1,0 +1,59 @@
+.card {
+  h2 {
+    text-transform: none;
+    font-weight: 500;
+    margin-bottom: 20px;
+    .small {
+      font-size: 70%;
+    }
+  }
+  p {
+    padding-left: 15px;
+    i {
+      text-align: center;
+      min-width: 40px;
+    }
+    a {
+      color: black;
+      &:hover {
+        text-decoration: none;
+        color: $theme-danger;
+      }
+    }
+  }
+  .image-div {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  @include card(3);
+  [class*='col-'] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+h6.subheading {
+  text-transform: none;
+  color: #999999;
+}
+.fa-map-marker {
+  padding-left: 4px;
+}
+hr {
+  margin-top: 0px;
+  width: 100%;
+}
+.section-heading {
+  display: inline-block;
+  border-bottom: 4px solid $theme-primary;
+}
+#picture {
+  background: url('../img/logo.png') center center / cover no-repeat;
+  min-height: 400px;
+}
+button,
+.btn {
+  border-radius: 2px !important;
+}

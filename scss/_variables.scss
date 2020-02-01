@@ -1,0 +1,28 @@
+// Variables
+
+// Gray and Brand Colors for use across theme
+
+$theme-primary: #b72025;
+$theme-danger: #7f0000;
+$theme-light: #ffcccb;
+
+$gray-base: #000 !default;
+$gray-darker: lighten($gray-base, 13.5%) !default;
+$gray-dark: lighten($gray-base, 20%) !default;
+$gray: lighten($gray-base, 33.5%) !default;
+$gray-light: lighten($gray-base, 46.7%) !default;
+$gray-lighter: lighten($gray-base, 93.5%) !default;
+
+//Spacing
+$xs-spacing: 5px;
+$sm-spacing: 10px;
+$md-spacing: 25px;
+$lg-spacing: 50px;
+$xl-spacing: 100px;
+$xxl-spacing: 150px;
+
+$xs-percentage-spacing: 5%;
+$sm-percentage-spacing: 10%;
+$md-percentage-spacing: 15%;
+$lg-percentage-spacing: 20%;
+$xl-percentage-spacing: 30%;

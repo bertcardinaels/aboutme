@@ -1,0 +1,97 @@
+// Styling for the navbar
+#mainNav {
+  @include card(3);
+  background-color: $theme-primary;
+  .navbar-toggler {
+    font-size: 12px;
+    right: 0;
+    padding: 13px;
+    text-transform: uppercase;
+    color: $theme-primary;
+    border: 0;
+    background-color: white;
+    @include heading-font;
+  }
+  .navbar-brand {
+    color: white;
+    @include script-font;
+    &.active,
+    &:active,
+    &:focus,
+    &:hover {
+
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        font-size: 90%;
+        font-weight: 400;
+        padding: 0.75em 0 0.75em 0.75em;
+        letter-spacing: 1px;
+        color: white;
+        @include heading-font;
+        border-bottom: 2px solid transparent;
+        &.active,
+        &:hover {
+          background-color:white;
+          color: $theme-primary;
+        }
+      }
+    }
+  }
+}
+@media(min-width:992px) {
+  #mainNav {
+    box-shadow: none;
+    padding-top: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent;
+    .navbar-brand {
+      font-size: 1.75em;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+      color: $theme-primary;
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          padding: 1.1em 1em !important;
+          color: $theme-primary;
+          &.active,
+          &:hover {
+            background-color: white;
+            color: $theme-danger;
+            border-color: $theme-danger;
+          }
+        }
+      }
+    }
+    &.navbar-shrink {
+      .nav-item {
+        .nav-link {
+          color: white;
+          &.active,
+          &:hover {
+            background-color: $theme-primary;
+            border-color: white;
+            color: white;
+          }
+        }
+      }
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: $theme-primary;
+      @include card($depth:2);
+      .navbar-brand {
+        color: white;
+        font-size: 1.25em;
+        padding: 12px 0;
+      }
+    }
+  }
+}
